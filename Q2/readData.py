@@ -1,12 +1,8 @@
 import sys
 
-
-  
-
 class information:
     def __init__(self,text):
         self.text = text
-        # print("data in file is \n" +text +"\n")
 
     def countAlp(self):
         alphabet_freq= {}
@@ -33,8 +29,6 @@ class information:
         self.change()
         self.countAlp()
         return
-
-
 
 with open(sys.argv[1], 'r') as source:
     text = source.read()
